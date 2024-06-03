@@ -1,5 +1,5 @@
 package ncreep.types
 
-final case class UserID(value: Int)
-final case class UserData(value: String)
-final case class EnrichedUserData(value: String)
+case class UserID(value: Int)
+case class UserData(value: String)
+case class EnrichedUserData(value: String)

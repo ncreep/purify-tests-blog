@@ -14,7 +14,7 @@ class UberServiceTest extends AnyWordSpec with Matchers:
 
       val service = new UberService(TestFetcher, TestEnricher, bookkeeper, storage)
 
-      val expectedUserData = UserData(s"data: 5")
+      val expectedUserData = UserData("data: 5")
       val expectedEnriched = EnrichedUserData("enriched: 5 - data: 5")
 
       service.fetchAndStore(UserID(5))
