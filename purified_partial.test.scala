@@ -6,8 +6,8 @@ import org.scalatest.wordspec.AnyWordSpec
 import scala.collection.mutable.ListBuffer
 
 class UberServiceTest extends AnyWordSpec with Matchers:
-  "The uber-service" should: 
-    "fetch the user data, enrich it, and store the results" in: 
+  "The uber-service" should:
+    "fetch the user data, enrich it, and store the results" in:
       val storage = new TestStorage
 
       val service = new UberService(TestFetcher, TestEnricher, TestBookkeeper, storage)
